@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Presento Bootstrap Template - Index</title>
+  <title>AndGate Informatics Pvt Ltd.</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -28,6 +28,36 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
+  <script>
+    function includeHTML() {
+      var z, i, elmnt, file, xhttp;
+      /* Loop through a collection of all HTML elements: */
+      z = document.getElementsByTagName("*");
+      for (i = 0; i < z.length; i++) {
+        elmnt = z[i];
+        /*search for elements with a certain atrribute:*/
+        file = elmnt.getAttribute("w3-include-html");
+        if (file) {
+          /* Make an HTTP request using the attribute value as the file name: */
+          xhttp = new XMLHttpRequest();
+          xhttp.onreadystatechange = function() {
+            if (this.readyState == 4) {
+              if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+              if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+              /* Remove the attribute, and call this function once more: */
+              elmnt.removeAttribute("w3-include-html");
+              includeHTML();
+            }
+          }
+          xhttp.open("GET", file, true);
+          xhttp.send();
+          /* Exit the function: */
+          return;
+        }
+      }
+    }
+    </script>
+
   <!-- =======================================================
   * Template Name: Presento - v1.1.0
   * Template URL: https://bootstrapmade.com/presento-bootstrap-corporate-template/
@@ -38,45 +68,7 @@
 
 <body>
 
-  <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top">
-    <div class="container-fluid">
-      <div class="row justify-content-center">
-        <div class="col-xl-10 d-flex align-items-center">
-          <h1 class="logo mr-auto"><a href="index.html">Andgate<span>.</span></a></h1>
-          <!-- Uncomment below if you prefer to use an image logo -->
-          <!-- <a href="index.html" class="logo mr-auto"><img src="assets/img/logo.png" alt=""></a>-->
-
-          <nav class="nav-menu d-none d-lg-block">
-            <ul>
-              <li class="active"><a href="#header">Home</a></li>
-              <li><a href="#portfolio">Portfolio</a></li>
-              <li class="drop-down"><a href="">Services</a>
-                <ul>
-                  <li><a href="#">ASIC Design Services</a></li>
-                  <li><a href="#">Front End Design Services</a></li>
-                  <li><a href="#">Back End Engineering Services</a></li>
-                  <li><a href="#">Analog and Mixed Signal Engineering Services</a></li>
-                  <li><a href="#">Database Engineering</a></li>
-                  <li><a href="#">AI/ML Services</a></li>
-                  <li><a href="#">Embedded and IoT</a></li>
-                </ul>
-              </li>
-              <li><a href="#about">About</a></li>
-              <li><a href="#team">Team</a></li>
-              <li><a href="blog.html">Why US</a></li>
-              <li><a href="#career">Career</a></li>
-              <li><a href="#contact">Contact</a></li>
-            </ul>
-          </nav><!-- .nav-menu -->
-
-          <a href="#about" class="get-started-btn scrollto">Get Started</a>
-        </div>
-      </div>
-
-    </div>
-  </header><!-- End Header -->
-
+  <div w3-include-html="header.html"></div>
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="d-flex align-items-center">
 
@@ -215,25 +207,25 @@
           <li class="nav-item col-3">
             <a class="nav-link active show" data-toggle="tab" href="#tab-1">
               <i class="ri-gps-line"></i>
-              <h4 class="d-none d-lg-block">Modi sit est dela pireda nest</h4>
+              <h4 class="d-none d-lg-block">Our Mission</h4>
             </a>
           </li>
           <li class="nav-item col-3">
             <a class="nav-link" data-toggle="tab" href="#tab-2">
               <i class="ri-body-scan-line"></i>
-              <h4 class="d-none d-lg-block">Unde praesenti mara setra le</h4>
+              <h4 class="d-none d-lg-block">Our Vision</h4>
             </a>
           </li>
           <li class="nav-item col-3">
             <a class="nav-link" data-toggle="tab" href="#tab-3">
               <i class="ri-sun-line"></i>
-              <h4 class="d-none d-lg-block">Pariatur explica nitro dela</h4>
+              <h4 class="d-none d-lg-block">Culture & Values</h4>
             </a>
           </li>
           <li class="nav-item col-3">
             <a class="nav-link" data-toggle="tab" href="#tab-4">
               <i class="ri-store-line"></i>
-              <h4 class="d-none d-lg-block">Nostrum qui dile node</h4>
+              <h4 class="d-none d-lg-block">Technical Support</h4>
             </a>
           </li>
         </ul>
@@ -242,20 +234,17 @@
           <div class="tab-pane active show" id="tab-1">
             <div class="row">
               <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0" data-aos="fade-up" data-aos-delay="100">
-                <h3>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h3>
+                <h3></h3>
                 <p class="font-italic">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                  magna aliqua.
+                  To provide highly sustainable technological and design services to the entire Global Market through :
                 </p>
                 <ul>
-                  <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                  <li><i class="ri-check-double-line"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-                  <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
+                  <li><i class="ri-check-double-line"></i> Diligent Skill</li>
+                  <li><i class="ri-check-double-line"></i> Innovative Skill</li>
+                  <li><i class="ri-check-double-line"></i> Highly Integrated Technological Skill</li>
                 </ul>
-                <p>
-                  Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                  velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                  culpa qui officia deserunt mollit anim id est laborum
+                <p class="font-italic">
+                  To provide the best working environment to our Engineers and vendors and make a complete eco-system for the growth of the Industry. 
                 </p>
               </div>
               <div class="col-lg-6 order-1 order-lg-2 text-center" data-aos="fade-up" data-aos-delay="200">
@@ -266,22 +255,19 @@
           <div class="tab-pane" id="tab-2">
             <div class="row">
               <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0">
-                <h3>Neque exercitationem debitis soluta quos debitis quo mollitia officia est</h3>
-                <p>
-                  Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                  velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                  culpa qui officia deserunt mollit anim id est laborum
-                </p>
+                <h3></h3>
                 <p class="font-italic">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                  magna aliqua.
+                  We are a technological service provider in the area of : 
                 </p>
                 <ul>
-                  <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                  <li><i class="ri-check-double-line"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-                  <li><i class="ri-check-double-line"></i> Provident mollitia neque rerum asperiores dolores quos qui a. Ipsum neque dolor voluptate nisi sed.</li>
-                  <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
+                  <li><i class="ri-check-double-line"></i> Semiconductor</li>
+                  <li><i class="ri-check-double-line"></i> iOT</li>
+                  <li><i class="ri-check-double-line"></i> AI & Machine Learning</li>
+                  <li><i class="ri-check-double-line"></i> Data Science</li>
                 </ul>
+                <p class="font-italic">
+                  Our Engineers have excellence and expertise in the design, development, validation and deployment of solutions needed to fix the real world problems.
+                </p>
               </div>
               <div class="col-lg-6 order-1 order-lg-2 text-center">
                 <img src="assets/img/tabs-2.jpg" alt="" class="img-fluid">
@@ -291,20 +277,13 @@
           <div class="tab-pane" id="tab-3">
             <div class="row">
               <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0">
-                <h3>Voluptatibus commodi ut accusamus ea repudiandae ut autem dolor ut assumenda</h3>
-                <p>
-                  Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                  velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                  culpa qui officia deserunt mollit anim id est laborum
-                </p>
-                <ul>
-                  <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                  <li><i class="ri-check-double-line"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-                  <li><i class="ri-check-double-line"></i> Provident mollitia neque rerum asperiores dolores quos qui a. Ipsum neque dolor voluptate nisi sed.</li>
-                </ul>
+                <h3></h3>
                 <p class="font-italic">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                  magna aliqua.
+                  At AndGate Informatics, we recognize that customer focus & teamwork are key factors to success. This is reflected in our culture, values and core competencies. 
+                </p>
+                <p class="font-italic" >We as a company, work to set an environment that fosters excellence through Training, orientation, customer focus, innovation, teamwork which encourages employees to contribute, learn and grow throughout their careers.
+                </p>
+                <p class="font-italic">AndGate Informatics’s integrity and policy of open, honest and transparent communication builds trust and collaboration among the industry, while our flexibility and diversity creates a culture in which people share knowledge freely, bringing out the very best in each other.
                 </p>
               </div>
               <div class="col-lg-6 order-1 order-lg-2 text-center">
@@ -315,21 +294,13 @@
           <div class="tab-pane" id="tab-4">
             <div class="row">
               <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0">
-                <h3>Omnis fugiat ea explicabo sunt dolorum asperiores sequi inventore rerum</h3>
-                <p>
-                  Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                  velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                  culpa qui officia deserunt mollit anim id est laborum
+                <h3></h3>
+                <p class="font-italic">
+                  We offer a spectrum of design and verification services, which includes defining specification, logic partitioning, micro-architecture, RTL coding, synthesis, developing custom and standard VIPs and verification environment development using both traditional and advanced techniques.
                 </p>
                 <p class="font-italic">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                  magna aliqua.
+                  Our ace team of engineers and consultants are skilled across a wide range of the most powerful modern tools, technologies and methods used in Semiconductor Industry. We are experienced professionals in making best practices fit into existing flow and have to our credit several FIRST-TIME - RIGHT Silicon successes.
                 </p>
-                <ul>
-                  <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                  <li><i class="ri-check-double-line"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-                  <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
-                </ul>
               </div>
               <div class="col-lg-6 order-1 order-lg-2 text-center">
                 <img src="assets/img/tabs-4.jpg" alt="" class="img-fluid">
@@ -347,7 +318,7 @@
 
         <div class="section-title">
           <h2>Services</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea.</p>
+          <p>Our team works and provides services across the globe.</p>
         </div>
 
         <div class="row">
@@ -356,7 +327,9 @@
               <i class="icofont-computer"></i>
               <h4>ASIC Design Services</h4>
                 <p>We provide an extensive set of full-flow IC design services focused on supporting semiconductor and systems companies in the delivery of IC, SoC, ASIC or FPGA projects</p>
-                <p align="right"><span style="white-space:pre">											</span>Read more...</p>
+                <p align="right"><span style="white-space:pre">											</span>
+                  <a href="services/asic-design.html">Read more...</a>
+                </p>
             </div>
           </div>
           <div class="col-md-6 mt-4 mt-md-0">
@@ -393,7 +366,7 @@
           <div class="col-md-6 mt-4 mt-md-0">
             <div class="icon-box" data-aos="fade-up" data-aos-delay="600">
               <i class="icofont-tasks-alt"></i>
-              <h4>AI &amp;ML Service</h4>
+              <h4>AI &amp;ML Services</h4>
               <p>We provide Artificial Intelligence and machine learning solutions.</p>
                 <p align="right"><span style="white-space:pre">						</span>Read more...</p>
             </div>
@@ -409,8 +382,8 @@
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-          <h2>Portfolio</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea.</p>
+          <h2>Our Interests</h2>
+          <p>Followings are the category areas in which we are interested in.</p>
         </div>
 
         <div class="row" data-aos="fade-up" data-aos-delay="100">
@@ -425,8 +398,7 @@
         </div>
 
         <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+          <div class="col-lg-2 col-md-3 portfolio-item filter-app">
             <div class="portfolio-wrap">
               <img src="assets/img/portfolio/portfolio-1.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
@@ -440,7 +412,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+          <div class="col-lg-2 col-md-3 portfolio-item filter-web">
             <div class="portfolio-wrap">
               <img src="assets/img/portfolio/portfolio-2.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
@@ -454,7 +426,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+          <div class="col-lg-2 col-md-3 portfolio-item filter-app">
             <div class="portfolio-wrap">
               <img src="assets/img/portfolio/portfolio-3.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
@@ -468,7 +440,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+          <div class="col-lg-2 col-md-3 portfolio-item filter-card">
             <div class="portfolio-wrap">
               <img src="assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
@@ -482,7 +454,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+          <div class="col-lg-2 col-md-3 portfolio-item filter-web">
             <div class="portfolio-wrap">
               <img src="assets/img/portfolio/portfolio-5.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
@@ -496,7 +468,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+          <div class="col-lg-2 col-md-3 portfolio-item filter-app">
             <div class="portfolio-wrap">
               <img src="assets/img/portfolio/portfolio-6.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
@@ -510,7 +482,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+          <div class="col-lg-2 col-md-3 portfolio-item filter-card">
             <div class="portfolio-wrap">
               <img src="assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
@@ -524,7 +496,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+          <div class="col-lg-2 col-md-3 portfolio-item filter-card">
             <div class="portfolio-wrap">
               <img src="assets/img/portfolio/portfolio-8.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
@@ -538,7 +510,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+          <div class="col-lg-2 col-md-3 portfolio-item filter-web">
             <div class="portfolio-wrap">
               <img src="assets/img/portfolio/portfolio-9.jpg" class="img-fluid" alt="">
               <div class="portfolio-info">
@@ -643,142 +615,6 @@
 
       </div>
     </section><!-- End Testimonials Section -->
-
-    <!-- ======= Pricing Section ======= -->
-    <section id="pricing" class="pricing section-bg">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>Pricing</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea.</p>
-        </div>
-
-        <div class="row">
-
-          <div class="col-lg-4 col-md-6">
-            <div class="box" data-aos="fade-up" data-aos-delay="100">
-              <h3>Free</h3>
-              <h4><sup>$</sup>0<span> / month</span></h4>
-              <ul>
-                <li>Aida dere</li>
-                <li>Nec feugiat nisl</li>
-                <li>Nulla at volutpat dola</li>
-                <li class="na">Pharetra massa</li>
-                <li class="na">Massa ultricies mi</li>
-              </ul>
-              <div class="btn-wrap">
-                <a href="#" class="btn-buy">Buy Now</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 mt-4 mt-md-0">
-            <div class="box featured" data-aos="fade-up" data-aos-delay="200">
-              <h3>Business</h3>
-              <h4><sup>$</sup>19<span> / month</span></h4>
-              <ul>
-                <li>Aida dere</li>
-                <li>Nec feugiat nisl</li>
-                <li>Nulla at volutpat dola</li>
-                <li>Pharetra massa</li>
-                <li class="na">Massa ultricies mi</li>
-              </ul>
-              <div class="btn-wrap">
-                <a href="#" class="btn-buy">Buy Now</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 mt-4 mt-lg-0">
-            <div class="box" data-aos="fade-up" data-aos-delay="300">
-              <h3>Developer</h3>
-              <h4><sup>$</sup>29<span> / month</span></h4>
-              <ul>
-                <li>Aida dere</li>
-                <li>Nec feugiat nisl</li>
-                <li>Nulla at volutpat dola</li>
-                <li>Pharetra massa</li>
-                <li>Massa ultricies mi</li>
-              </ul>
-              <div class="btn-wrap">
-                <a href="#" class="btn-buy">Buy Now</a>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- End Pricing Section -->
-
-    <!-- ======= Frequently Asked Questions Section ======= -->
-    <section id="faq" class="faq">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>Frequently Asked Questions</h2>
-        </div>
-
-        <ul class="faq-list" data-aos="fade-up">
-
-          <li>
-            <a data-toggle="collapse" class="collapsed" href="#faq1">Non consectetur a erat nam at lectus urna duis? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-x icon-close"></i></a>
-            <div id="faq1" class="collapse" data-parent=".faq-list">
-              <p>
-                Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
-              </p>
-            </div>
-          </li>
-
-          <li>
-            <a data-toggle="collapse" href="#faq2" class="collapsed">Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-x icon-close"></i></a>
-            <div id="faq2" class="collapse" data-parent=".faq-list">
-              <p>
-                Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
-              </p>
-            </div>
-          </li>
-
-          <li>
-            <a data-toggle="collapse" href="#faq3" class="collapsed">Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-x icon-close"></i></a>
-            <div id="faq3" class="collapse" data-parent=".faq-list">
-              <p>
-                Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis
-              </p>
-            </div>
-          </li>
-
-          <li>
-            <a data-toggle="collapse" href="#faq4" class="collapsed">Ac odio tempor orci dapibus. Aliquam eleifend mi in nulla? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-x icon-close"></i></a>
-            <div id="faq4" class="collapse" data-parent=".faq-list">
-              <p>
-                Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
-              </p>
-            </div>
-          </li>
-
-          <li>
-            <a data-toggle="collapse" href="#faq5" class="collapsed">Tempus quam pellentesque nec nam aliquam sem et tortor consequat? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-x icon-close"></i></a>
-            <div id="faq5" class="collapse" data-parent=".faq-list">
-              <p>
-                Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est. Purus gravida quis blandit turpis cursus in
-              </p>
-            </div>
-          </li>
-
-          <li>
-            <a data-toggle="collapse" href="#faq6" class="collapsed">Tortor vitae purus faucibus ornare. Varius vel pharetra vel turpis nunc eget lorem dolor? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-x icon-close"></i></a>
-            <div id="faq6" class="collapse" data-parent=".faq-list">
-              <p>
-                Laoreet sit amet cursus sit amet dictum sit amet justo. Mauris vitae ultricies leo integer malesuada nunc vel. Tincidunt eget nullam non nisi est sit amet. Turpis nunc eget lorem dolor sed. Ut venenatis tellus in metus vulputate eu scelerisque. Pellentesque diam volutpat commodo sed egestas egestas fringilla phasellus faucibus. Nibh tellus molestie nunc non blandit massa enim nec.
-              </p>
-            </div>
-          </li>
-
-        </ul>
-
-      </div>
-    </section><!-- End Frequently Asked Questions Section -->
 
     <!-- ======= Team Section ======= -->
     <section id="team" class="team section-bg">
@@ -922,86 +758,13 @@
 
   </main><!-- End #main -->
 
-  <!-- ======= Footer ======= -->
-  <footer id="footer">
-
-    <div class="footer-top">
-      <div class="container">
-        <div class="row">
-
-          <div class="col-lg-3 col-md-6 footer-contact">
-            <h3>Presento<span>.</span></h3>
-            <p>
-              A108 Adam Street <br>
-              New York, NY 535022<br>
-              United States <br><br>
-              <strong>Phone:</strong> +1 5589 55488 55<br>
-              <strong>Email:</strong> info@example.com<br>
-            </p>
-          </div>
-
-          <div class="col-lg-2 col-md-6 footer-links">
-            <h4>Useful Links</h4>
-            <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
-            </ul>
-          </div>
-
-          <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Our Services</h4>
-            <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
-            </ul>
-          </div>
-
-          <div class="col-lg-4 col-md-6 footer-newsletter">
-            <h4>Join Our Newsletter</h4>
-            <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
-            <form action="" method="post">
-              <input type="email" name="email"><input type="submit" value="Subscribe">
-            </form>
-          </div>
-
-        </div>
-      </div>
-    </div>
-
-    <div class="container d-md-flex py-4">
-
-      <div class="mr-md-auto text-center text-md-left">
-        <!-- <div class="copyright"> -->
-          <!-- &copy; Copyright <strong><span>Presento</span></strong>. All Rights Reserved -->
-        <!-- </div> -->
-		<!--
-        <div class="credits">
-          <!-- All the links in the footer should remain intact. -->
-          <!-- You can delete the links only if you purchased the pro version. -->
-          <!-- Licensing information: https://bootstrapmade.com/license/ -->
-          <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/presento-bootstrap-corporate-template/ -->
-         <!-- Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-        </div>
-		-->
-      </div>
-      <!-- <div class="social-links text-center text-md-right pt-3 pt-md-0"> -->
-        <!-- <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a> -->
-        <!-- <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a> -->
-        <!-- <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a> -->
-        <!-- <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a> -->
-        <!-- <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a> -->
-      <!-- </div> -->
-    </div>
-  </footer><!-- End Footer -->
+  <div w3-include-html="footer.html"></div>
 
   <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
-
+  
+  <script>
+    includeHTML();
+  </script>
   <!-- Vendor JS Files -->
   <script src="assets/vendor/jquery/jquery.min.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -1014,9 +777,9 @@
   <script src="assets/vendor/venobox/venobox.min.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
 
+
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
-
 </body>
 
 </html>
