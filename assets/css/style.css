@@ -248,7 +248,7 @@ h1, h2, h3, h4, h5, h6 {
 .mobile-nav-toggle {
   position: fixed;
   right:5px;
-  top: 31px;
+  top:22px;
   z-index: 9998;
   border: 0;
   background: none;
@@ -1041,6 +1041,8 @@ section {
     position: static;
     left: auto;
   }
+  .desktopslide-img {display:none;}
+  .mobslide-img {display:block;}
 }
 
 /*--------------------------------------------------------------
@@ -2185,3 +2187,4 @@ section {
 .entry-content .panel-heading .panel-title a.collapsed::before {content:"\efc2";font-family: 'IcoFont';}
 .carousel-inner img {width: 100%;height: 100%;}
 .carousel-indicators .active {background-color: #f58220;}
+.mobslide-img {display:none;}
