@@ -350,7 +350,7 @@ h1, h2, h3, h4, h5, h6 {
 .mobile-nav-active .mobile-nav-toggle i {
   color: #fff;
 }
-
+img{max-width:100%;}
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
@@ -2188,3 +2188,5 @@ section {
 .carousel-inner img {width: 100%;height: 100%;}
 .carousel-indicators .active {background-color: #f58220;}
 .mobslide-img {display:none;}
+.inner-page .container > img,
+.inner-page .container > p img {margin-bottom:30px;}
