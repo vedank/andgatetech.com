@@ -2190,5 +2190,5 @@ section {
 .mobslide-img {display:none;}
 .inner-page .container > img,
 .inner-page .container > p img {margin-bottom:30px;}
-.footercustom-icon {display:inline-block;vertical-align:middle;}
-.footercustom-icon img {display:inline-block;margin-right:5px;max-width:18px;}
+.footercustom-icon {display:inline-block;vertical-align:middle; }
+.footercustom-icon img {max-width:18px;margin-right:5px;display:inline-block;}
