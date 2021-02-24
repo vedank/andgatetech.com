@@ -1277,7 +1277,7 @@ section {
   border-radius: 4px;
 }
 
-.contact .info-box i {
+.contact .info-box > i {
   font-size: 32px;
   color: #f58220;
   border-radius: 50%;
@@ -1296,12 +1296,12 @@ section {
   padding: 0;
   line-height: 24px;
   font-size: 14px;
-  margin-bottom: 0;
+  margin-bottom: 0;height:40px;
 }
 
 .contact .php-email-form {
   box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
-  padding: 30px;
+  padding:45px 30px;
   border-radius: 4px;
 }
 
@@ -2190,3 +2190,5 @@ section {
 .mobslide-img {display:none;}
 .inner-page .container > img,
 .inner-page .container > p img {margin-bottom:30px;}
+.footercustom-icon {display:inline-block;vertical-align:middle;}
+.footercustom-icon img {display:inline-block;margin-right:5px;max-width:18px;}
