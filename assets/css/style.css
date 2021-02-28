@@ -264,6 +264,15 @@ h1, h2, h3, h4, h5, h6 {
   color: #111111;
 }
 
+.mobile-nav-toggle .close-menu:before {
+  content:"\eee4";
+  color:#fff;
+  font-size:20px;
+  position:absolute;
+  right:0;
+  top:0;
+}
+
 .mobile-nav {
   position: fixed;
   top: 55px;
@@ -294,6 +303,11 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 500;
   outline: none;
 }
+.nav-active .mobile-nav {
+  opacity:1;
+  visibility:visible;
+}
+
 
 .mobile-nav a:hover, .mobile-nav .active > a, .mobile-nav li:hover > a {
   color: #f58220;
@@ -336,6 +350,10 @@ h1, h2, h3, h4, h5, h6 {
   overflow: hidden;
   display: none;
   transition: ease-in-out 0.2s;
+}
+
+.nav-active .mobile-nav-overly{
+  display: block;
 }
 
 .mobile-nav-active {

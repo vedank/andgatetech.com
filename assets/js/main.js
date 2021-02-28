@@ -228,3 +228,16 @@
   });
 
 })(jQuery);
+
+$(document).ready(function(){
+  $('.icofont-navigation-menu').click(function(){
+    alert("hii");
+    $('body').addClass('nav-active');
+    $('.icofont-navigation-menu').addClass('close-menu');
+  });
+  $('.close-menu').click(function(){
+    alert("hii");
+    $('body').removeClass('nav-active');
+    $('.icofont-navigation-menu').addClass('close-menu');
+  });
+});
