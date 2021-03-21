@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <base href="/andgatetech.com/">  
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>FPGA  Design Services | AndGate Informatics Pvt Ltd.</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="/assets/img/favicon.ico" rel="icon">
+  <link href="/assets/img/favicon.ico" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <script
+    src="https://code.jquery.com/jquery-3.3.1.js"
+    integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+    crossorigin="anonymous">
+    </script>
+    <script> 
+    $(function(){
+      $("#header").load("header.html"); 
+      $("#footer").load("footer.html");
+    });
+    </script>
+</head>
+
+<body>
+
+  <div id="header"></div>
+  
+  <main id="main">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <section class="breadcrumbs">
+      <div class="container">
+
+        <ol>
+          <li><a href="index.html">Home</a></li>
+          <li>FPGA Design Services</li>
+        </ol>
+        <h2>FPGA Design Services</h2>
+
+      </div>
+    </section><!-- End Breadcrumbs -->
+
+    <section class="inner-page">
+      <div class="container" data-aos="fade-up">
+        <img src="assets/img/services/FPGA-design-headerview.jpg" alt="fpga">
+        <p class="text-justify">Today it is not unusual for FPGA users to have to deal with more than one language in their designs. At earlier stages of the design development it may be necessary to interface HDL simulation with environments using Domain Specific Languages, such as Matlab. To speed up testbench simulations, patches written in C/C++ are frequently used. Sometimes, when simulation is still too slow hardware acceleration may be necessary.</p>
+        <p class="text-justify">In the last two years embedded systems found their way into the FPGA domain, adding one more headache – how to test both soft and hardware in the simulation environment not prepared for this task.</p>
+        <p class="text-justify">In order to gain a competitive advantage, companies need advanced tooling to support and scale their embedded and IoT applications with strategic uses of these model-based designs.</p>
+        <p class="text-justify">The final bitstream format depends on the used platform. What’s more, every platform has different resources and even if some of them provide similar functionality, they can be implemented in a different way. In order to be able to match all that variety of possible situations, the creation of the final bitstream is divided into few steps</p>      
+        <img src="assets/img/services/fpga-1.png" alt="fpga"> 
+        <h2>Synthesis</h2>
+        <p class="text-justify">Synthesis is the process of converting input Verilog file into a netlist, which describes the connections between different block available on the desired FPGA chip. However, it is worth to notice that these are only logical connections. So the synthesized model is only a draft of the final design, made with the use of available resources.</p>
+        <h4>RTL Generation</h4>
+        <p class="text-justify">The input Verilog file is often really complicated. Usually it is written in a way that it is hard to distinguish the digital circuit standing behind the implemented functionality. Designers often use a so-called Behavioral Level of abstraction, in their designs, which means that the whole description is mostly event-driven. In Verilog, support for behavioral models is made with use of always statements.</p>
+        <p class="text-justify">However, FPGA mostly consist of Look Up Tables (LUT) and flip-flops. Look Up Tables implement only the functionality of logic gates. Due to that, the synthesis process has to convert the complicated Behavioral model to a simpler description.</p>
+        <p class="text-justify">Firstly, the design is described in terms of registers and logical operations. This is the so-called Register-Transfer Level (RTL). Secondly, in order to simplify the design even more, some complex logic is rewritten in the way that the final result contain only logic gates and registers. This model is on Logical Gate level of abstraction.</p>
+        <p class="text-justify">The process of simplification is quite complicated, because of that it often demands additional simulations between mentioned steps to prove that the input design is equivalent to its simplified form.</p>
+        <h4>Technology mapping</h4>
+        <p class="text-justify">FPGAs from different architectures may have different architecture. For example, they may contain some complicated functional blocks (i.e. RAM, DSP blocks) and even some of the basic blocks like LUT tables and flip-flops may vary between chips. Because of that, there is a need to describe the final design in terms of platform-specific resources. This is the next step in the process of synthesis. The simplified description containing i.e. logic gates, flip-flops and a few more complicated blocks like RAM is taken and used “general” blocks are substituted with that physically located in the chosen FPGA. The vendor-specific definitions of these blocks are often located in a separate library.</p>
+        <h4>Optimization</h4>
+        <p class="text-justify">Optimization is the key factor that allows to better utilize resources of an FPGA. There are some universal situations in which the design can be optimized, for example by substituting a bunch of logic gates in terms of fewer, different gates. However, some operations can be performed only after certain steps i.e. after technology mapping. As a result, optimization is an integral part of most of the synthesis steps.</p>
+        <h4>Synthesis in SymbiFlow</h4>
+        <p class="text-justify">In the SymbiFlow toolchain synthesis is made with the use of Yosys, that is able to perform all the mentioned steps and convert Verilog to netlist description. The result of these steps is written to a file in .eblif format.</p>
+        <h2>Place & Route</h2>
+        <p class="text-justify">The Synthesis process results in an output containing logical elements available on the desired FPGA chip with the specified connections between them. However, it does not specify the physical layout of those elements in the final design. The goal of the Place and Route (PnR) process is to take the synthesized design and implement it into the target FPGA device. The PnR tool needs to have information about the physical composition of the device, routing paths between the different logical blocks and signal propagation timings. The working flow of different PnR tools may vary, however, the process presented below represents the typical one, adopted by most of these tools. Usually, it consists of four steps - packing, placing, routing and analysis.</p>
+        <h4>Packing</h4>
+        <p class="text-justify">In the first step, the tool collects and analyzes the primitives present in the synthesized design (e.g. Flip-Flops, Muxes, Carry-chains, etc), and organizes them in clusters, each one belonging to a physical tile of the device. The PnR tool makes the best possible decision, based on the FPGA routing resources and timings between different points in the chip.</p>
+        <h4>Placing</h4>
+        <p class="text-justify">After having clustered all the various primitives into the physical tiles of the device, the tool begins the placement process. This step consists in assigning a physical location to every cluster generated in the packing stage. The choice of the locations is based on the chosen algorithm and on the user’s parameters, but generally, the final goal is to find the best placement that allows the routing step to find more optimal solutions.</p>
+        <h4>Routing</h4>
+        <p class="text-justify">Routing is one of the most demanding tasks of the the whole process. All possible connections between the placed blocks and the information on the signals propagation timings, form a complex graph. The tool tries to find the optimal path connecting all the placed clusters using the information provided in the routing graph. Once all the nets have been routed, an output file containing the implemented design is produced.</p>
+        <h4>Analysis</h4>
+        <p class="text-justify">This last step usually checks the whole design in terms of timings and power consumption.</p>
+    </div>
+      
+    </section>
+
+  </main><!-- End #main -->
+
+
+  <div id="footer"></div>
+  <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/jquery/jquery.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+  <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+  <script src="assets/vendor/counterup/counterup.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/venobox/venobox.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+
+   <script src="assets/js/main.js"></script>
+
+<!-- Template Main JS File -->
+  <nav class="mobile-nav d-lg-none">
+    <ul>
+      <li class="active"><a href="#header">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#team">Team</a></li>
+      <li><a href="blog.html">Blog</a></li>
+      <li class="drop-down"><a href="">Drop Down</a>
+        <ul>
+          <li><a href="#">Drop Down 1</a></li>
+          <li class="drop-down"><a href="#">Deep Drop Down</a>
+            <ul>
+              <li><a href="#">Deep Drop Down 1</a></li>
+              <li><a href="#">Deep Drop Down 2</a></li>
+              <li><a href="#">Deep Drop Down 3</a></li>
+              <li><a href="#">Deep Drop Down 4</a></li>
+              <li><a href="#">Deep Drop Down 5</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Drop Down 2</a></li>
+          <li><a href="#">Drop Down 3</a></li>
+          <li><a href="#">Drop Down 4</a></li>
+        </ul>
+      </li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="mobile-nav-overly"></div>
+
+</body>
+
+</html>
