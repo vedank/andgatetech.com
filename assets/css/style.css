@@ -427,7 +427,9 @@ img{max-width:100%;}
 @media (max-width: 768px) {
   #hero {
     text-align: center;
-    padding-top: 58px;
+    padding-top: 45px;
+    padding-bottom: 0;
+    height:auto;
   }
   #hero h1 {
     font-size: 28px;
@@ -487,7 +489,9 @@ section {
   padding: 120px 0;
   color: #fff;
 }
-
+.team {
+  margin-top: -130px ;
+}
 .section-bg:before {
   content: "";
   background: #1b1b1b;
@@ -519,6 +523,7 @@ section {
 .breadcrumbs h2 {
   font-size: 28px;
   font-weight: 500;
+  color: #f58220;
 }
 
 .breadcrumbs ol {
@@ -1220,6 +1225,8 @@ section {
 .team .member .member-img {
   position: relative;
   overflow: hidden;
+  text-align: center;
+  padding-top: 20px;
 }
 
 .team .member .social {
@@ -1517,6 +1524,7 @@ section {
   padding: 30px;
   margin-bottom: 60px;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  background-color: #1b1b1b;
 }
 
 .blog .entry .entry-img {
@@ -1531,9 +1539,16 @@ section {
   padding: 0;
   margin: 0 0 20px 0;
 }
+.blog .entry .entry-content form .form-group label {
+  color: #fff;
+}
+.jobsubmit-btn {
+  background-color: #f58220 !important;
+  border-color: #f58220 !important;
+}
 
 .blog .entry .entry-title a {
-  color: #111111;
+  color: #f58220;
   transition: 0.3s;
 }
 
@@ -2195,13 +2210,13 @@ section {
 }
 
 
-.jobposition-title {margin-bottom: 30px;text-transform: uppercase;font-weight: 600;}
+.jobposition-title {margin-bottom: 30px;text-transform: uppercase;font-weight: 600;color: #f58220;}
 .entry-content .panel-heading {border-bottom: 1px solid #444;}
 .entry-content .panel-heading .panel-title {font-size:20px;}
 .entry-content .panel.panel-default {margin-bottom:15px;}
-.entry-content .panel.panel-default .panel-body {font-size:14px;margin-top:10px;}
-.entry-content .panel-heading .panel-title a {position: relative;width:100%;display:block;color: #444;}
-.entry-content .panel-heading .panel-title a::before {content:"\ef9a";font-family: 'IcoFont';width:20px;height:20px;display: inline-block;font-size: 18px;color:#000;position:absolute;top:0;bottom:0;right:0}
+.entry-content .panel.panel-default .panel-body {font-size:14px;margin-top:10px;color: #fff;}
+.entry-content .panel-heading .panel-title a {position: relative;width:100%;display:block;color: #fff;}
+.entry-content .panel-heading .panel-title a::before {content:"\ef9a";font-family: 'IcoFont';width:20px;height:20px;display: inline-block;font-size: 18px;color:#fff;position:absolute;top:0;bottom:0;right:0}
 .entry-content .panel-heading .panel-title a.collapsed::before {content:"\efc2";font-family: 'IcoFont';}
 .carousel-inner img {width: 100%;height: 100%;}
 .carousel-indicators .active {background-color: #f58220;}
