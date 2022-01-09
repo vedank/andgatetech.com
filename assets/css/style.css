@@ -2045,6 +2045,7 @@ section {
   font-size: 14px;
 }
 
+<<<<<<< Updated upstream
 .blog .career-form .validate {
   display: none;
   color: #D52941;
@@ -2093,6 +2094,30 @@ section {
   border-top-color: #eee;
   -webkit-animation: animate-loading 1s linear infinite;
   animation: animate-loading 1s linear infinite;
+
+}
+
+.captionBOX {
+  left: auto;
+  right: 5%;
+  width: auto;  
+}
+
+.captionBOX a{
+  background: #f58322;
+  border-radius: 100px;
+  font-family: "Raleway", sans-serif;
+  font-size: 24px;
+  color: #000002;
+  font-weight: 600;
+  margin-bottom: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
+  transition: all ease-in-out .2s;
+  -webkit-transition: all ease-in-out .2s;
+}
+.captionBOX a:hover {
+  background: #ebb994;
 }
 
 /*--------------------------------------------------------------
@@ -2259,7 +2284,6 @@ section {
   text-decoration: none;
 }
 
-
 .jobposition-title {margin-bottom: 30px;text-transform: uppercase;font-weight: 600;color: #f58220;}
 .entry-content .panel-heading {border-bottom: 1px solid #444;}
 .entry-content .panel-heading .panel-title {font-size:20px;}
@@ -2275,3 +2299,22 @@ section {
 .inner-page .container > p img {margin-bottom:30px;}
 .footercustom-icon {display:inline-block;vertical-align:middle; }
 .footercustom-icon img {max-width:18px;margin-right:5px;display:inline-block;}
+
+
+@media (max-width:1023px) {
+  .captionBOX a{
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width:767px) {
+  .captionBOX {
+    padding-bottom: 0;
+    bottom: 5px;    
+  }
+  .captionBOX a{
+    font-size: 10px;
+    margin-bottom: 5px;    
+  }
+}
