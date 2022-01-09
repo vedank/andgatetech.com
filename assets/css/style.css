@@ -2045,6 +2045,56 @@ section {
   font-size: 14px;
 }
 
+.blog .career-form .validate {
+  display: none;
+  color: #D52941;
+  margin: 0 0 15px 0;
+  font-weight: 400;
+  font-size: 13px;
+}
+
+.blog .career-form .error-message {
+  display: none;
+  color: #fff;
+  background: #ed3c0d;
+  text-align: left;
+  padding: 15px;
+  font-weight: 600;
+}
+
+.blog .career-form .error-message br + br {
+  margin-top: 25px;
+}
+
+.blog .career-form .sent-message {
+  display: none;
+  color: #fff;
+  background: #18d26e;
+  text-align: center;
+  padding: 15px;
+  font-weight: 600;
+}
+
+.blog .career-form .loading {
+  display: none;
+  background: #FFA500;
+  text-align: center;
+  padding: 15px;
+}
+
+.blog .career-form .loading:before {
+  content: "";
+  display: inline-block;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  margin: 0 10px -6px 0;
+  border: 3px solid #18d26e;
+  border-top-color: #eee;
+  -webkit-animation: animate-loading 1s linear infinite;
+  animation: animate-loading 1s linear infinite;
+}
+
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
